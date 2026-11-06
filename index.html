@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Kemet Couture • L'élégance ancestrale réinventée pour le vestiaire moderne.</title>
+  <meta name="description" content="Maison Kemet Couture sublime votre silhouette à Dakar grâce à des créations sur mesure alliant l'authentique wax, la soie et le bogolan. Prenez rendez-vous dans notre atelier pour vivre une expérience de mode unique et sur mesure.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20256%20256%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%20aria-label%3D%22MAISON%20KEMET%20Symbol%20Transparent%22%3E%0A%20%20%3Ctitle%3EMAISON%20KEMET%20%E2%80%94%20Symbol%20Mark%20(Transparent)%3C%2Ftitle%3E%0A%20%20%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22brandGrad_jj0kwz%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23E5C365%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23D4AF37%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23047857%22%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22brandGrad_jj0kwz_accent%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23E5C365%22%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%0A%20%20%3Cg%20id%3D%22symbol-mark%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cg%20transform%3D%22translate(128%2C%20128)%22%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%220%2C-88%2076%2C-44%200%2C0%20-76%2C-44%22%20fill%3D%22url(%23brandGrad_jj0kwz_accent)%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%220%2C0%2076%2C-44%2076%2C44%200%2C88%22%20fill%3D%22url(%23brandGrad_jj0kwz)%22%20opacity%3D%220.95%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%220%2C0%200%2C88%20-76%2C44%20-76%2C-44%22%20fill%3D%22url(%23brandGrad_jj0kwz)%22%20opacity%3D%220.75%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2216%22%20fill%3D%22%2307070A%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%20fill%3D%22url(%23brandGrad_jj0kwz_accent)%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GSAP 3 & ScrollTrigger CDN pour fluidité d'élite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Google Fonts : Typographies d'Élite Unslop -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,800&family=Space+Grotesk:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FDFBF7;
+      color: #5C4A3E;
+      overflow-x: hidden;
+    }
+    .font-title-custom {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-mono-custom {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .luxury-glow {
+      box-shadow: 0 0 40px -5px rgba(200, 90, 50, 0.18);
+    }
+    .fine-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(200, 90, 50, 0.18) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(200, 90, 50, 0.18) 1px, transparent 1px);
+    }
+    .card-3d {
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform 0.15s ease-out, box-shadow 0.25s ease-out;
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-400 selection:text-black relative">
+
+  <!-- ================= CANVAS 3D INTERACTIF (PROFONDEUR SPATIALE & PARTICULES) ================= -->
+  <canvas id="canvas-3d-scene" class="fixed inset-0 pointer-events-none z-0" style="opacity: 0.38;"></canvas>
+
+  <!-- ================= NAVBAR FLOTTANTE (ÎLE CENTRÉE) ================= -->
+  <header class="fixed top-4 inset-x-0 z-50 flex justify-center px-4">
+    <nav class="w-full max-w-5xl rounded-full px-6 py-3 flex items-center justify-between backdrop-blur-2xl shadow-xl transition-all duration-300" style="background: rgba(253, 251, 247, 0.92); border: 1px solid rgba(200, 90, 50, 0.18); color: #2B1E16;">
+      <div class="flex items-center space-x-3.5">
+        <!-- Logo Vectoriel Client Conçu par le Skill logo-design -->
+        <div class="w-10 h-10 flex items-center justify-center p-1.5 rounded-xl shadow-sm overflow-hidden" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18);">
+          <div class="w-full h-full flex items-center justify-center"><svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAISON KEMET Symbol Transparent">
+  <title>MAISON KEMET — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_jj0kwz" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E5C365"/>
+        <stop offset="50%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_jj0kwz_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#E5C365"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+      <g transform="translate(128, 128)">
+        <polygon points="0,-88 76,-44 0,0 -76,-44" fill="url(#brandGrad_jj0kwz_accent)"/>
+        <polygon points="0,0 76,-44 76,44 0,88" fill="url(#brandGrad_jj0kwz)" opacity="0.95"/>
+        <polygon points="0,0 0,88 -76,44 -76,-44" fill="url(#brandGrad_jj0kwz)" opacity="0.75"/>
+        <circle cx="0" cy="0" r="16" fill="#07070A"/>
+        <circle cx="0" cy="0" r="10" fill="url(#brandGrad_jj0kwz_accent)"/>
+      </g>
+    
+  </g>
+</svg></div>
+        </div>
+        <span class="font-extrabold text-sm sm:text-base tracking-tight" style="color: #2B1E16;">Maison Kemet Couture</span>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-bold" style="color: #8C7A6E;">
+        <a href="#catalogue" class="hover:opacity-80 transition-opacity">Sélection</a>
+        <a href="#manifeste" class="hover:opacity-80 transition-opacity">Philosophie</a>
+        <a href="#exigence" class="hover:opacity-80 transition-opacity">Exigence</a>
+        <a href="#avis" class="hover:opacity-80 transition-opacity">Témoignages</a>
+        <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+      </div>
+
+      <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander." target="_blank" class="px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center space-x-2 hover:scale-[1.03] active:scale-95" style="background: #C85A32; color: #FFFFFF;">
+        <span>Commander</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ================= SECTION HERO (OUVERTURE CINÉMATIQUE SUR-MESURE) ================= -->
+  
+  <!-- HERO ASYMÉTRIQUE ÉDITORIAL (SPLIT-HERO AVEC CADRE PHOTO 3D ET RELIEF) -->
+  <section class="relative min-h-[92vh] flex items-center pt-28 pb-20 px-4 sm:px-8 max-w-7xl mx-auto overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <!-- Colonne Contenu (Gauche - 7 colonnes) -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left z-10">
+        <!-- Badge Sectoriel & Localisation -->
+        <div class="hero-anim inline-flex items-center space-x-2.5 px-4 py-2 rounded-full text-xs font-mono-custom font-bold uppercase tracking-wider mb-6 shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); color: #C85A32;">
+          <span class="w-2 h-2 rounded-full animate-ping" style="background: #C85A32;"></span>
+          <span>✨ Haute Couture & Savoir-Faire d'Art</span>
+        </div>
+
+        <!-- Titre Monumental -->
+        <h1 class="hero-anim text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight uppercase leading-[1.06] mb-6" style="color: #2B1E16;">
+          Maison Kemet Couture
+          <span class="block font-title-custom italic font-normal text-3xl sm:text-5xl md:text-6xl mt-2 tracking-tight" style="color: #C85A32;">
+            L'élégance ancestrale réinventée pour le vestiaire moderne.
+          </span>
+        </h1>
+
+        <p class="hero-anim text-base sm:text-lg max-w-xl font-light leading-relaxed mb-8" style="color: #5C4A3E;">
+          Maison Kemet Couture sublime votre silhouette à Dakar grâce à des créations sur mesure alliant l'authentique wax, la soie et le bogolan. Prenez rendez-vous dans notre atelier pour vivre une expérience de mode unique et sur mesure.
+        </p>
+
+        <!-- Boutons d'Action Principaux -->
+        <div class="hero-anim flex flex-col sm:flex-row items-center space-y-3.5 sm:space-y-0 sm:space-x-5 w-full sm:w-auto mb-10">
+          <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander." target="_blank" class="w-full sm:w-auto px-9 py-4 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-xl flex items-center justify-center space-x-2.5 hover:scale-[1.03] luxury-glow active:scale-95" style="background: #C85A32; color: #FFFFFF;">
+            <span>Commander sur WhatsApp</span>
+            <span>💬</span>
+          </a>
+          <a href="#catalogue" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-sm transition-all border hover:shadow-md text-center" style="border-color: rgba(200, 90, 50, 0.18); color: #2B1E16; background: #FFFFFF;">
+            Voir le Catalogue ↓
+          </a>
+        </div>
+
+        <!-- Garanties Locales -->
+        <div class="hero-anim flex items-center space-x-6 text-xs font-mono-custom" style="color: #8C7A6E;">
+          <span class="flex items-center space-x-1.5">
+            <span class="font-bold" style="color: #C85A32;">✓</span>
+            <span>Paiement Wave &amp; OM</span>
+          </span>
+          <span class="flex items-center space-x-1.5">
+            <span class="font-bold" style="color: #C85A32;">✓</span>
+            <span>Almadies, Route de Ngor, Dakar</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Colonne Visuelle Asymétrique (Droite - 5 colonnes avec 3D Parallax Tilt) -->
+      <div class="lg:col-span-5 relative flex justify-center z-10 hero-anim">
+        <!-- Cadre Photo 3D Haute Résolution -->
+        <div class="card-3d relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl" style="border: 2px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+          <!-- Reflet Glare Dynamique -->
+          <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-30"></div>
+
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1400&q=85" alt="Maison Kemet Couture" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" style="transform: translateZ(10px);" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          
+          <!-- Logo vectoriel flottant en filigrane en haut à droite avec profondeur 3D -->
+          
+          <div class="absolute top-4 right-4 w-12 h-12 rounded-2xl backdrop-blur-md p-2 shadow-lg flex items-center justify-center z-20" style="background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(200, 90, 50, 0.18); transform: translateZ(35px);">
+            <svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAISON KEMET Symbol Transparent">
+  <title>MAISON KEMET — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_jj0kwz" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E5C365"/>
+        <stop offset="50%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_jj0kwz_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#E5C365"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+      <g transform="translate(128, 128)">
+        <polygon points="0,-88 76,-44 0,0 -76,-44" fill="url(#brandGrad_jj0kwz_accent)"/>
+        <polygon points="0,0 76,-44 76,44 0,88" fill="url(#brandGrad_jj0kwz)" opacity="0.95"/>
+        <polygon points="0,0 0,88 -76,44 -76,-44" fill="url(#brandGrad_jj0kwz)" opacity="0.75"/>
+        <circle cx="0" cy="0" r="16" fill="#07070A"/>
+        <circle cx="0" cy="0" r="10" fill="url(#brandGrad_jj0kwz_accent)"/>
+      </g>
+    
+  </g>
+</svg>
+          </div>
+
+          <!-- Carte Flottante de Réputation en bas de l'image (Profondeur translateZ) -->
+          <div class="absolute bottom-5 inset-x-5 p-4 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center justify-between z-20" style="background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(200, 90, 50, 0.18); transform: translateZ(40px);">
+            <div>
+              <div class="text-xs font-mono-custom font-bold" style="color: #C85A32;">Édition Limitée</div>
+              <div class="text-sm font-bold tracking-tight" style="color: #2B1E16;">Atelier Sur-Mesure</div>
+              <div class="text-xs font-light" style="color: #8C7A6E;">Coupes d'exception et broderies</div>
+            </div>
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #C85A32; color: #FFFFFF;">
+              ✓
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRIP TÉLÉMÉTRIE D'EXCELLENCE & COMPTEURS ANIMÉS ================= -->
+  <section class="relative z-10 py-12 px-4 border-y" style="background: #FFFFFF; border-color: rgba(200, 90, 50, 0.18);">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="p-4">
+        <div class="text-3xl sm:text-4xl font-extrabold font-mono-custom tracking-tight mb-1" style="color: #C85A32;">★ 4.9/5</div>
+        <div class="text-xs font-bold uppercase tracking-wider" style="color: #2B1E16;">Satisfaction Client</div>
+        <div class="text-[11px] font-light mt-0.5" style="color: #8C7A6E;">+150 avis certifiés</div>
+      </div>
+      <div class="p-4">
+        <div class="text-3xl sm:text-4xl font-extrabold font-mono-custom tracking-tight mb-1" style="color: #C85A32;">100%</div>
+        <div class="text-xs font-bold uppercase tracking-wider" style="color: #2B1E16;">Artisanal &amp; Noble</div>
+        <div class="text-[11px] font-light mt-0.5" style="color: #8C7A6E;">Matières sélectionnées</div>
+      </div>
+      <div class="p-4">
+        <div class="text-3xl sm:text-4xl font-extrabold font-mono-custom tracking-tight mb-1" style="color: #C85A32;">24-48h</div>
+        <div class="text-xs font-bold uppercase tracking-wider" style="color: #2B1E16;">Prise en Charge</div>
+        <div class="text-[11px] font-light mt-0.5" style="color: #8C7A6E;">Dakar &amp; Sous-région</div>
+      </div>
+      <div class="p-4">
+        <div class="text-3xl sm:text-4xl font-extrabold font-mono-custom tracking-tight mb-1" style="color: #C85A32;">0 FCFA</div>
+        <div class="text-xs font-bold uppercase tracking-wider" style="color: #2B1E16;">Frais Cachés</div>
+        <div class="text-[11px] font-light mt-0.5" style="color: #8C7A6E;">Direct Atelier Wave/OM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION CATALOGUE / OFFRES (AVEC CARTES 3D TILT ET VRAIES PHOTOS) ================= -->
+  <section id="catalogue" class="relative z-10 py-28 px-4 sm:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #C85A32;">SÉLECTION OFFICIELLE</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight" style="color: #2B1E16;">Nos Collections Signature</h2>
+      <p class="text-sm sm:text-base mt-3 max-w-xl mx-auto font-light" style="color: #8C7A6E;">Chaque pièce est travaillée avec une exigence absolue. Commandez directement via WhatsApp.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="card-3d product-card group relative rounded-[2.2rem] overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-lg hover:shadow-2xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <!-- Reflet lumineux spéculaire 3D (Glare dynamique au curseur) -->
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-30"></div>
+
+        <!-- Image Produit / Service avec Zoom fluide au hover et profondeur 3D -->
+        <div class="relative w-full h-60 overflow-hidden" style="transform: translateZ(20px);">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Ensemble Tailleur Wax Impérial" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en relief 3D -->
+          <span class="absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-2xl" style="background: #C85A32; color: #FFFFFF; transform: translateZ(35px);">
+            45 000 FCFA
+          </span>
+        </div>
+
+        <div class="p-7 flex flex-col justify-between flex-1 relative z-10" style="transform: translateZ(25px);">
+          <div>
+            <h3 class="text-xl font-extrabold tracking-tight mb-2.5" style="color: #2B1E16;">Ensemble Tailleur Wax Impérial</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #5C4A3E;">Tailleur structuré aux coupes contemporaines, mariant un wax aux motifs audacieux et des finitions haute couture irréprochables.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander%20:%20Ensemble%20Tailleur%20Wax%20Imp%C3%A9rial%20(45%20000%20FCFA)" target="_blank" class="w-full py-4 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.03] active:scale-95" style="background: #C85A32; color: #FFFFFF; transform: translateZ(30px);">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1.5">→</span>
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="card-3d product-card group relative rounded-[2.2rem] overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-lg hover:shadow-2xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <!-- Reflet lumineux spéculaire 3D (Glare dynamique au curseur) -->
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-30"></div>
+
+        <!-- Image Produit / Service avec Zoom fluide au hover et profondeur 3D -->
+        <div class="relative w-full h-60 overflow-hidden" style="transform: translateZ(20px);">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Robe de Soirée Soie & Bogolan" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en relief 3D -->
+          <span class="absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-2xl" style="background: #C85A32; color: #FFFFFF; transform: translateZ(35px);">
+            65 000 FCFA
+          </span>
+        </div>
+
+        <div class="p-7 flex flex-col justify-between flex-1 relative z-10" style="transform: translateZ(25px);">
+          <div>
+            <h3 class="text-xl font-extrabold tracking-tight mb-2.5" style="color: #2B1E16;">Robe de Soirée Soie & Bogolan</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #5C4A3E;">Pièce d'exception fluide et aérienne, associant la légèreté de la soie pure à des touches subtiles de tissage bogolan traditionnel.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander%20:%20Robe%20de%20Soir%C3%A9e%20Soie%20%26%20Bogolan%20(65%20000%20FCFA)" target="_blank" class="w-full py-4 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.03] active:scale-95" style="background: #C85A32; color: #FFFFFF; transform: translateZ(30px);">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1.5">→</span>
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="card-3d product-card group relative rounded-[2.2rem] overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-lg hover:shadow-2xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <!-- Reflet lumineux spéculaire 3D (Glare dynamique au curseur) -->
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-30"></div>
+
+        <!-- Image Produit / Service avec Zoom fluide au hover et profondeur 3D -->
+        <div class="relative w-full h-60 overflow-hidden" style="transform: translateZ(20px);">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Chemise Homme Lin Brodé Kemet" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en relief 3D -->
+          <span class="absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-2xl" style="background: #C85A32; color: #FFFFFF; transform: translateZ(35px);">
+            28 000 FCFA
+          </span>
+        </div>
+
+        <div class="p-7 flex flex-col justify-between flex-1 relative z-10" style="transform: translateZ(25px);">
+          <div>
+            <h3 class="text-xl font-extrabold tracking-tight mb-2.5" style="color: #2B1E16;">Chemise Homme Lin Brodé Kemet</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #5C4A3E;">Chemise en lin haut de gamme rehaussée de broderies géométriques faites main sur le plastron, alliance parfaite de sobriété et de prestance.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander%20:%20Chemise%20Homme%20Lin%20Brod%C3%A9%20Kemet%20(28%20000%20FCFA)" target="_blank" class="w-full py-4 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.03] active:scale-95" style="background: #C85A32; color: #FFFFFF; transform: translateZ(30px);">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1.5">→</span>
+          </a>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= MANIFESTE DE MARQUE & EXPÉRIENCE PERSONNELLE ================= -->
+  <section id="manifeste" class="relative z-10 py-28 px-4 sm:px-8 border-t" style="border-color: rgba(200, 90, 50, 0.18); background: rgba(255, 255, 255, 0.7);">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="w-12 h-12 mx-auto mb-6 flex items-center justify-center p-2 rounded-2xl shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18);">
+        <svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAISON KEMET Symbol Transparent">
+  <title>MAISON KEMET — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_jj0kwz" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E5C365"/>
+        <stop offset="50%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_jj0kwz_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#E5C365"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+      <g transform="translate(128, 128)">
+        <polygon points="0,-88 76,-44 0,0 -76,-44" fill="url(#brandGrad_jj0kwz_accent)"/>
+        <polygon points="0,0 76,-44 76,44 0,88" fill="url(#brandGrad_jj0kwz)" opacity="0.95"/>
+        <polygon points="0,0 0,88 -76,44 -76,-44" fill="url(#brandGrad_jj0kwz)" opacity="0.75"/>
+        <circle cx="0" cy="0" r="16" fill="#07070A"/>
+        <circle cx="0" cy="0" r="10" fill="url(#brandGrad_jj0kwz_accent)"/>
+      </g>
+    
+  </g>
+</svg>
+      </div>
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-4" style="color: #C85A32;">NOTRE RAISON D'ÊTRE</div>
+      <blockquote class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-snug mb-8" style="color: #2B1E16;">
+        « La plupart cèdent aux compromis de masse. Notre obsession : <span class="font-title-custom italic font-normal" style="color: #C85A32;">élever chaque détail</span> au rang d'expérience inoubliable. »
+      </blockquote>
+      <div class="flex items-center justify-center space-x-3 text-xs font-mono-custom" style="color: #8C7A6E;">
+        <span>— La Direction, Maison Kemet Couture</span>
+        <span>•</span>
+        <span>Dakar, Sénégal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION EXIGENCE & AVANTAGES ================= -->
+  <section id="exigence" class="relative z-10 py-24 px-4 sm:px-8 max-w-6xl mx-auto border-t" style="border-color: rgba(200, 90, 50, 0.18);">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #C85A32;">ENGAGEMENT SANS COMPROMIS</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight" style="color: #2B1E16;">L'Excellence comme Seule Norme</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="card-3d feature-card relative p-8 rounded-[2rem] transition-all duration-300 shadow-sm hover:shadow-xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-20"></div>
+        <div style="transform: translateZ(25px);">
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(200, 90, 50, 0.08); color: #C85A32; border: 1px solid rgba(200, 90, 50, 0.18);">
+            01
+          </div>
+          <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #2B1E16;">Sur-Mesure Exclusif</h3>
+          <p class="text-sm leading-relaxed font-light" style="color: #5C4A3E;">Chaque pièce est taillée et ajustée spécifiquement à vos mesures pour un tombé parfait.</p>
+        </div>
+      </div>
+    
+
+      <div class="card-3d feature-card relative p-8 rounded-[2rem] transition-all duration-300 shadow-sm hover:shadow-xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-20"></div>
+        <div style="transform: translateZ(25px);">
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(200, 90, 50, 0.08); color: #C85A32; border: 1px solid rgba(200, 90, 50, 0.18);">
+            02
+          </div>
+          <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #2B1E16;">Matières Nobles</h3>
+          <p class="text-sm leading-relaxed font-light" style="color: #5C4A3E;">Sélection rigoureuse de textiles authentiques : wax de qualité supérieure, lin respirant et bogolan.</p>
+        </div>
+      </div>
+    
+
+      <div class="card-3d feature-card relative p-8 rounded-[2rem] transition-all duration-300 shadow-sm hover:shadow-xl" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-20"></div>
+        <div style="transform: translateZ(25px);">
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(200, 90, 50, 0.08); color: #C85A32; border: 1px solid rgba(200, 90, 50, 0.18);">
+            03
+          </div>
+          <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #2B1E16;">Accompagnement Privé</h3>
+          <p class="text-sm leading-relaxed font-light" style="color: #5C4A3E;">Conseils en image personnalisés et essayage privilégié dans notre atelier dakarois.</p>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= SECTION AVIS CLIENTS ================= -->
+  <section id="avis" class="relative z-10 py-24 px-4 sm:px-8 max-w-5xl mx-auto border-t" style="border-color: rgba(200, 90, 50, 0.18);">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #C85A32;">TÉMOIGNAGES CLIENTS</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight" style="color: #2B1E16;">La Confiance de Nos Hôtes</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="card-3d testimonial-card relative p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-20"></div>
+        <div style="transform: translateZ(25px);">
+          <div class="flex items-center space-x-1 mb-4 text-sm" style="color: #C85A32;">
+            ★★★★★
+          </div>
+          <p class="text-base italic mb-6 leading-relaxed font-light" style="color: #5C4A3E;">"Mon tailleur impérial a fait sensation lors d'un gala international. Le service sur mesure est d'une précision remarquable !"</p>
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #C85A32; color: #FFFFFF;">
+              A
+            </div>
+            <div>
+              <div class="font-bold text-sm" style="color: #2B1E16;">Aissatou Diallo</div>
+              <div class="text-xs" style="color: #8C7A6E;">Entrepreneure, Dakar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="card-3d testimonial-card relative p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); transform-style: preserve-3d;">
+        <div class="card-glare absolute inset-0 pointer-events-none rounded-[inherit] opacity-0 transition-opacity duration-200 z-20"></div>
+        <div style="transform: translateZ(25px);">
+          <div class="flex items-center space-x-1 mb-4 text-sm" style="color: #C85A32;">
+            ★★★★★
+          </div>
+          <p class="text-base italic mb-6 leading-relaxed font-light" style="color: #5C4A3E;">"La chemise en lin brodé allie modernité et tradition avec une élégance rare. Je recommande les yeux fermés."</p>
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #C85A32; color: #FFFFFF;">
+              M
+            </div>
+            <div>
+              <div class="font-bold text-sm" style="color: #2B1E16;">Moussa Ndiaye</div>
+              <div class="text-xs" style="color: #8C7A6E;">Architecte, Plateau</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= FOOTER STATUTAIRE ================= -->
+  <footer id="contact" class="relative z-10 py-20 px-4 text-center border-t" style="background: #FFFFFF; border-color: rgba(200, 90, 50, 0.18);">
+    <div class="max-w-4xl mx-auto">
+      <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center"><svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAISON KEMET Symbol Transparent">
+  <title>MAISON KEMET — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_jj0kwz" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E5C365"/>
+        <stop offset="50%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_jj0kwz_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#E5C365"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+      <g transform="translate(128, 128)">
+        <polygon points="0,-88 76,-44 0,0 -76,-44" fill="url(#brandGrad_jj0kwz_accent)"/>
+        <polygon points="0,0 76,-44 76,44 0,88" fill="url(#brandGrad_jj0kwz)" opacity="0.95"/>
+        <polygon points="0,0 0,88 -76,44 -76,-44" fill="url(#brandGrad_jj0kwz)" opacity="0.75"/>
+        <circle cx="0" cy="0" r="16" fill="#07070A"/>
+        <circle cx="0" cy="0" r="10" fill="url(#brandGrad_jj0kwz_accent)"/>
+      </g>
+    
+  </g>
+</svg></div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold mb-3 tracking-tight" style="color: #2B1E16;">Maison Kemet Couture</h2>
+      <p class="text-sm mb-2 font-light" style="color: #5C4A3E;">Almadies, Route de Ngor, Dakar</p>
+      <p class="text-xs font-mono-custom mb-8" style="color: #C85A32;">Du Lundi au Samedi de 10h00 à 19h00 (sur rendez-vous) • Service Client : +221 77 869 05 84</p>
+      
+      <div class="mb-12">
+        <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20des%20informations." target="_blank" class="inline-flex items-center space-x-2.5 px-9 py-4 rounded-full font-bold text-sm shadow-xl hover:scale-[1.03] transition-all" style="background: #C85A32; color: #FFFFFF;">
+          <span>Ouvrir la discussion WhatsApp</span>
+          <span>💬</span>
+        </a>
+      </div>
+
+      <!-- Signature Agence Daro TECH -->
+      <div class="pt-8 text-xs font-mono-custom border-t" style="border-color: rgba(200, 90, 50, 0.18); color: #8C7A6E;">
+        Conçu selon les standards d'ingénierie d'élite de l'agence <a href="https://daro-tech.app" target="_blank" class="font-bold hover:underline" style="color: #C85A32;">Daro TECH</a> • Dakar (UTC+0)
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BOUTON WHATSAPP FLOTTANT DYNAMIQUE (LOGO OFFICIEL & ANIMATION PING) ================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Bulle d'invitation tactile / Tooltip interactif -->
+    <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander." target="_blank" class="mr-3 px-4 py-2.5 rounded-full shadow-2xl text-xs font-bold transition-all duration-300 opacity-95 group-hover:opacity-100 group-hover:scale-105 hidden sm:flex items-center space-x-2.5" style="background: #FFFFFF; border: 1px solid rgba(200, 90, 50, 0.18); color: #2B1E16;">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>Discuter &amp; Commander</span>
+    </a>
+
+    <!-- Bouton Circulaire WhatsApp avec Pulse & Véritable Logo SVG -->
+    <a href="https://wa.me/221778690584?text=Bonjour%20Maison%20Kemet%20Couture,%20je%20souhaite%20commander." target="_blank" class="relative w-16 h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95" title="Commander sur WhatsApp" aria-label="Commander sur WhatsApp">
+      <!-- Onde de diffusion animée (Ripple Ping) -->
+      <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-40 animate-ping"></span>
+      <!-- Véritable Logo Vectoriel WhatsApp -->
+      <svg class="relative z-10 w-8 h-8 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.031 0C5.396 0 0 5.394 0 12.029c0 2.116.552 4.181 1.6 6L.073 24l6.155-1.503a11.97 11.97 0 005.803 1.5c6.635 0 12.03-5.394 12.03-12.029C24.061 5.394 18.666 0 12.031 0zm0 22.023c-1.848 0-3.664-.496-5.253-1.442l-.377-.225-3.896.953.953-3.8-.247-.393a9.96 9.96 0 01-1.533-5.087c0-5.502 4.478-9.98 9.98-9.98 5.503 0 9.98 4.478 9.98 9.98 0 5.502-4.477 9.98-9.98 9.98zm5.474-7.469c-.3-.15-1.775-.876-2.05-.975-.275-.1-.475-.15-.675.15s-.775.975-.95 1.175c-.175.2-.35.225-.65.075-.3-.15-1.266-.467-2.41-1.488-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.018-.462.132-.612.136-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525s-.675-1.625-.925-2.225c-.244-.583-.492-.504-.675-.513-.175-.008-.375-.01-.575-.01s-.525.075-.8.375c-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.116 3.23 5.127 4.532.716.31 1.275.495 1.71.634.72.228 1.375.196 1.893.118.577-.087 1.775-.725 2.025-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ================= MOTEUR 3D CANVAS & PARALLAX TILT GSAP ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Initialisation GSAP 3 & ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Entrée cinématique du Hero
+      gsap.from('.hero-anim', {
+        y: 45,
+        opacity: 0,
+        duration: 1.1,
+        stagger: 0.12,
+        ease: 'power3.out'
+      });
+
+      // Apparition des cartes au scroll
+      gsap.from('.product-card', {
+        scrollTrigger: {
+          trigger: '#catalogue',
+          start: 'top 80%',
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: 'power2.out'
+      });
+
+      gsap.from('.feature-card', {
+        scrollTrigger: {
+          trigger: '#exigence',
+          start: 'top 80%',
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: 'power2.out'
+      });
+
+      // Morphing de la navbar
+      const headerNav = document.querySelector('header nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          headerNav.classList.add('shadow-2xl');
+        } else {
+          headerNav.classList.remove('shadow-2xl');
+        }
+      });
+
+      // 2. MOTEUR 3D CANVAS : PROFONDEUR SPATIALE & CONSTELATION VIVANTE
+      const canvas = document.getElementById('canvas-3d-scene');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        });
+
+        const numPoints = window.innerWidth < 768 ? 30 : 65;
+        const points = [];
+        for (let i = 0; i < numPoints; i++) {
+          points.push({
+            x: (Math.random() - 0.5) * 1400,
+            y: (Math.random() - 0.5) * 1400,
+            z: Math.random() * 800 + 200,
+            speed: 0.2 + Math.random() * 0.3
+          });
+        }
+
+        let mouseX = 0, mouseY = 0, targetMouseX = 0, targetMouseY = 0;
+        window.addEventListener('mousemove', (e) => {
+          targetMouseX = (e.clientX - width / 2) * 0.0006;
+          targetMouseY = (e.clientY - height / 2) * 0.0006;
+        });
+
+        const fov = 380;
+        const pColor = '#C85A32';
+
+        function render3D() {
+          ctx.clearRect(0, 0, width, height);
+          mouseX += (targetMouseX - mouseX) * 0.05;
+          mouseY += (targetMouseY - mouseY) * 0.05;
+
+          const projected = [];
+          for (let i = 0; i < points.length; i++) {
+            const p = points[i];
+            p.z -= p.speed;
+            if (p.z <= 60) p.z = 1000;
+
+            const cosY = Math.cos(mouseX), sinY = Math.sin(mouseX);
+            const cosX = Math.cos(mouseY), sinX = Math.sin(mouseY);
+
+            let x1 = p.x * cosY + p.z * sinY;
+            let z1 = -p.x * sinY + p.z * cosY;
+            let y1 = p.y * cosX - z1 * sinX;
+            let z2 = p.y * sinX + z1 * cosX;
+
+            if (z2 > 20) {
+              const scale = fov / z2;
+              const screenX = width / 2 + x1 * scale;
+              const screenY = height / 2 + y1 * scale;
+              const alpha = Math.min(1, Math.max(0.08, (1 - z2 / 1000) * 0.5));
+              projected.push({ x: screenX, y: screenY, alpha, scale });
+
+              ctx.beginPath();
+              ctx.arc(screenX, screenY, Math.max(1, 2.5 * scale), 0, Math.PI * 2);
+              ctx.fillStyle = pColor;
+              ctx.globalAlpha = alpha * 0.75;
+              ctx.fill();
+            }
+          }
+
+          // Liens de constellation 3D
+          for (let i = 0; i < projected.length; i++) {
+            for (let j = i + 1; j < projected.length; j++) {
+              const dx = projected[i].x - projected[j].x;
+              const dy = projected[i].y - projected[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 115) {
+                ctx.beginPath();
+                ctx.moveTo(projected[i].x, projected[i].y);
+                ctx.lineTo(projected[j].x, projected[j].y);
+                ctx.strokeStyle = pColor;
+                ctx.globalAlpha = (1 - dist / 115) * 0.16;
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+              }
+            }
+          }
+
+          requestAnimationFrame(render3D);
+        }
+        render3D();
+      }
+
+      // 3. MOTEUR 3D PARALLAX TILT & REFLET SPÉCULAIRE SUR CARTES
+      const cards3D = document.querySelectorAll('.card-3d');
+      cards3D.forEach(card => {
+        const glare = card.querySelector('.card-glare');
+        
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -12;
+          const rotateY = ((x - centerX) / centerX) * 12;
+
+          card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
+          if (glare) {
+            glare.style.opacity = '1';
+            glare.style.background = `radial-gradient(circle 240px at ${x}px ${y}px, rgba(255,255,255,0.22), transparent 70%)`;
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+          if (glare) {
+            glare.style.opacity = '0';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
