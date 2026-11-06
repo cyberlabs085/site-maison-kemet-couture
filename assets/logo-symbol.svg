@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MAISON KEMET Symbol Transparent">
+  <title>MAISON KEMET — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_jj0kwz" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E5C365"/>
+        <stop offset="50%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_jj0kwz_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#E5C365"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+      <g transform="translate(128, 128)">
+        <polygon points="0,-88 76,-44 0,0 -76,-44" fill="url(#brandGrad_jj0kwz_accent)"/>
+        <polygon points="0,0 76,-44 76,44 0,88" fill="url(#brandGrad_jj0kwz)" opacity="0.95"/>
+        <polygon points="0,0 0,88 -76,44 -76,-44" fill="url(#brandGrad_jj0kwz)" opacity="0.75"/>
+        <circle cx="0" cy="0" r="16" fill="#07070A"/>
+        <circle cx="0" cy="0" r="10" fill="url(#brandGrad_jj0kwz_accent)"/>
+      </g>
+    
+  </g>
+</svg>
